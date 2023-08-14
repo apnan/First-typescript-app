@@ -37,12 +37,11 @@ function App() {
     <div className="center-container">
       <Paper elevation={3} className="form-container">
         <Typography variant="h5" align="center">
-          {loggedIn ? `Welcome, ${username}!` : ' Welcome to my page'}
+          {loggedIn ? `Welcome, ${username}!` : 'LOGIN'}
         </Typography>
         {loggedIn ? (
           <>
             <Typography variant="body1" align="center">
-              You have successfully logged in as {username}.
             </Typography>
             <Button
               variant="contained"
@@ -80,7 +79,7 @@ function App() {
               fullWidth
               className="login-button"
             >
-              Sign In
+             Login
             </Button>
           </form>
         )}
